@@ -153,7 +153,16 @@ pip install -e ".[dev]"
 pytest -v
 ```
 
-See [PUBLISHING.md](PUBLISHING.md) for the PyPI release workflow.
+---
+
+## Questions or contributions
+
+Any questions, bug reports, or contributions — reach the founder directly:
+
+- GitHub: [@huseindra](https://github.com/huseindra)
+- Email: [husein@monago.io](mailto:husein@monago.io)
+
+Pull requests welcome. For larger changes, open an issue first to discuss the direction.
 
 ---
 
