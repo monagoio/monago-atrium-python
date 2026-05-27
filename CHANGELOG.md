@@ -22,11 +22,3 @@ Initial release. The headline value: **governance is visible** on every response
     `PolicyBlockedError` → `PIIBlockedError`, `SecurityBlockedError`, `ModelNotAllowedError`.
 - Full type hints, `py.typed` marker.
 - API key resolution from `api_key=` arg or `ATRIUM_API_KEY` / `MONAGO_API_KEY` env vars.
-
-### Not in scope yet (roadmap)
-
-- Streaming chat completions (SSE).
-- Eval hooks, skills, tracing.
-- Request metadata tagging (`user_id` / `session_id` / custom fields).
-- Multi-agent orchestration.
-- TypeScript SDK (`@monagoio/atrium-sdk`).

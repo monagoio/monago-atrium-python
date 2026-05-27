@@ -12,20 +12,8 @@ This is the SDK for teams that need to ship LLM features into regulated environm
 
 ## Install
 
-> **Heads-up on the package name:** the PyPI name `atrium-sdk` is already taken by an unrelated project. Until v0.1.0 is on PyPI, install from source. Once published, the canonical install will be:
->
-> ```bash
-> pip install monago-atrium
-> ```
->
-> Import name is `monago_atrium` (not `atrium`) to avoid collision with the existing `atrium` package on PyPI.
-
-Install locally for development:
-
 ```bash
-git clone https://github.com/monagoio/monago-atrium-python
-cd monago-atrium-python
-pip install -e ".[dev]"
+pip install monago-atrium
 ```
 
 Requires Python 3.10+.
@@ -122,19 +110,15 @@ The SDK itself is open source (MIT). The governance engine — policy DSL, PII d
 
 ---
 
-## v0.1.0 scope
+## Features
 
-This release covers the foundation:
-
-- ✅ `Atrium` and `AsyncAtrium` clients
-- ✅ `chat.completions.create` (OpenAI-compatible body)
-- ✅ Governance metadata parsed from `X-Monago-*` response headers
-- ✅ Typed exception hierarchy with governance context
-- ✅ Full type hints + `py.typed` marker
+- `Atrium` and `AsyncAtrium` clients
+- `chat.completions.create` with an OpenAI-compatible body
+- Governance metadata parsed from `X-Monago-*` response headers
+- Typed exception hierarchy with governance context on every block
+- Full type hints + `py.typed` marker
 
 ## Roadmap
-
-Not built yet — planned for upcoming releases:
 
 - **Streaming** chat completions (SSE)
 - **Eval hooks** — pre- and post-response evaluators (toxicity, PII, custom)
