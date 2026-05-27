@@ -110,23 +110,25 @@ The SDK itself is open source (MIT). The governance engine — policy DSL, PII d
 
 ---
 
-## Features
-
-- `Atrium` and `AsyncAtrium` clients
-- `chat.completions.create` with an OpenAI-compatible body
-- Governance metadata parsed from `X-Monago-*` response headers
-- Typed exception hierarchy with governance context on every block
-- Full type hints + `py.typed` marker
-
 ## Roadmap
 
-- **Streaming** chat completions (SSE)
-- **Eval hooks** — pre- and post-response evaluators (toxicity, PII, custom)
-- **Skills** — packaged tool / capability bundles
-- **Tracing** — OpenTelemetry integration
-- **Request metadata tagging** — attach `user_id` / `session_id` / custom fields to every audit record
-- **Multi-agent** — orchestration primitives
-- **TypeScript SDK** — `@monagoio/atrium-sdk` (npm), same API shape
+Shipped:
+
+- [x] `Atrium` and `AsyncAtrium` clients
+- [x] `chat.completions.create` with an OpenAI-compatible body
+- [x] Governance metadata parsed from `X-Monago-*` response headers
+- [x] Typed exception hierarchy with governance context on every block
+- [x] Full type hints + `py.typed` marker
+
+Upcoming:
+
+- [ ] **Streaming** chat completions (SSE)
+- [ ] **Eval hooks** — pre- and post-response evaluators (toxicity, PII, custom)
+- [ ] **Skills** — packaged tool / capability bundles
+- [ ] **Tracing** — OpenTelemetry integration
+- [ ] **Request metadata tagging** — attach `user_id` / `session_id` / custom fields to every audit record
+- [ ] **Multi-agent** — orchestration primitives
+- [ ] **TypeScript SDK** — `@monagoio/atrium-sdk` (npm), same API shape
 
 ---
 
