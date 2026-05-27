@@ -25,7 +25,7 @@ Requires Python 3.10+.
 ```python
 from monago_atrium import Atrium
 
-client = Atrium(api_key="mk_live_xxx", base_url="https://api.monago.io/v1")
+client = Atrium(api_key="sk-mng-your-key", base_url="https://api.monago.io/v1")
 
 res = client.chat.completions.create(
     model="gpt-5.4-mini",
@@ -57,7 +57,7 @@ The API key can also come from the `ATRIUM_API_KEY` environment variable.
 ```python
 from monago_atrium import AsyncAtrium
 
-async with AsyncAtrium(api_key="mk_live_xxx") as client:
+async with AsyncAtrium(api_key="sk-mng-your-key") as client:
     res = await client.chat.completions.create(
         model="gpt-5.4-mini",
         messages=[{"role": "user", "content": "Hello"}],
@@ -75,7 +75,7 @@ When the gateway blocks a request (PII / security / policy / model), the SDK rai
 from monago_atrium import Atrium
 from monago_atrium.exceptions import PIIBlockedError, SecurityBlockedError, PolicyBlockedError
 
-client = Atrium(api_key="mk_live_xxx")
+client = Atrium(api_key="sk-mng-your-key")
 
 try:
     res = client.chat.completions.create(

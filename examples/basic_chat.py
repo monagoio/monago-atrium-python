@@ -1,7 +1,7 @@
 """Minimal chat completion example.
 
 Run with:
-    export ATRIUM_API_KEY=mk_live_...
+    export ATRIUM_API_KEY=sk-mng-...
     python examples/basic_chat.py
 """
 

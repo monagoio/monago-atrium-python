@@ -5,7 +5,7 @@ reports back: PII detection, redaction list, policy decision, audit_id,
 provider, latency, and cost.
 
 Run with:
-    export ATRIUM_API_KEY=mk_live_...
+    export ATRIUM_API_KEY=sk-mng-...
     python examples/governance_demo.py
 """
 

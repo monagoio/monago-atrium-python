@@ -41,7 +41,7 @@ class Atrium:
 
     Example:
         >>> from monago_atrium import Atrium
-        >>> client = Atrium(api_key="mk_live_...")
+        >>> client = Atrium(api_key="sk-mng-...")
         >>> res = client.chat.completions.create(
         ...     model="gpt-5.4-mini",
         ...     messages=[{"role": "user", "content": "Hello"}],
@@ -92,7 +92,7 @@ class AsyncAtrium:
 
     Example:
         >>> from monago_atrium import AsyncAtrium
-        >>> async with AsyncAtrium(api_key="mk_live_...") as client:
+        >>> async with AsyncAtrium(api_key="sk-mng-...") as client:
         ...     res = await client.chat.completions.create(
         ...         model="gpt-5.4-mini",
         ...         messages=[{"role": "user", "content": "Hello"}],

@@ -4,7 +4,7 @@ Quickstart:
 
     from monago_atrium import Atrium
 
-    client = Atrium(api_key="mk_live_...")
+    client = Atrium(api_key="sk-mng-...")
     res = client.chat.completions.create(
         model="gpt-5.4-mini",
         messages=[{"role": "user", "content": "Hello"}],
