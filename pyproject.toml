@@ -1,0 +1,85 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "monago-atrium"
+version = "0.1.0"
+description = "Atrium SDK — an AI runtime for governed systems. Governance visible (PII redaction, policy decisions, audit IDs, cost) on every call."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+authors = [
+    { name = "Monago", email = "hello@monago.io" },
+]
+keywords = [
+    "ai",
+    "llm",
+    "openai",
+    "governance",
+    "pii",
+    "audit",
+    "compliance",
+    "atrium",
+    "monago",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Typing :: Typed",
+]
+dependencies = [
+    "httpx>=0.27.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+    "respx>=0.21",
+    "mypy>=1.10",
+    "ruff>=0.5",
+]
+
+[project.urls]
+Homepage = "https://monago.io"
+Documentation = "https://github.com/monagoio/monago-atrium-python#readme"
+Repository = "https://github.com/monagoio/monago-atrium-python"
+Issues = "https://github.com/monagoio/monago-atrium-python/issues"
+Changelog = "https://github.com/monagoio/monago-atrium-python/blob/main/CHANGELOG.md"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/monago_atrium"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "src/monago_atrium",
+    "README.md",
+    "LICENSE",
+    "PUBLISHING.md",
+    "CHANGELOG.md",
+    "tests",
+    "examples",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+files = ["src/monago_atrium"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
